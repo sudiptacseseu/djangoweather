@@ -1,5 +1,18 @@
 {% extends 'base.html' %}
 {% block content %}
     <h1>Hello me!!</h1>
+    <br/>
+    {{ api.0 }}<br/><br/>
+    AQI: {{ api.0.AQI }}<br/>
+    ReportingArea: {{ api.0.ReportingArea }}<br/>
+    Category: {{ api.0.Category.Name }}<br/><br/>
+    {{ api.1 }}<br/><br/>
+    AQI: {{ api.1.AQI }}<br/>
+    ReportingArea: {{ api.1.ReportingArea }}<br/>
+    Category: {{ api.1.Category.Name }}<br/><br/>
+    {{ api.2 }}<br/><br/>
+    AQI: {{ api.2.AQI }}<br/>
+    ReportingArea: {{ api.2.ReportingArea }}<br/>
+    Category: {{ api.2.Category.Name }}<br/><br/>
 {% endblock %}
     
